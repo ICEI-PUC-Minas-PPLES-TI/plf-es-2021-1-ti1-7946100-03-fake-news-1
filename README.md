@@ -1,4 +1,4 @@
-# Nome do projeto
+# Portal Fake News
 
 Escreva um ou dois  parágrafo resumindo o objetivo do seu projeto.
 
