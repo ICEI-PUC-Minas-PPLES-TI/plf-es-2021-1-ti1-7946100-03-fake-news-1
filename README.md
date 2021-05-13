@@ -13,7 +13,8 @@ Escreva um ou dois  parágrafo resumindo o objetivo do seu projeto.
 ## Professores responsáveis
 
 * Rommel Vieira Carneiro
-* Nome completo do professor 2
+* Luciana De Nardin
+* Simone Alves Nogueira
 
 ## Instruções de utilização
 
