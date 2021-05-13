@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>AvisoFN</title>
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/verificador.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="menu-icon">
+        <span class="fas fa-bars"></span>
+      </div>
+      <div class="logo">AvisoFN</div>
+      <div class="nav-items">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./verificador.html">Verificador</a></li>
+        <li><a href="./FAQ.html">FAQ/Ajuda</a></li>
+      </div>
+      <div class="search-icon">
+        <span class="fas fa-search"></span>
+      </div>
+      <div class="cancel-icon">
+        <span class="fas fa-times"></span>
+      </div>
+      <form action="#">
+        <input
+          type="search"
+          class="search-data"
+          placeholder="Procurar"
+          required
+        />
+        <button type="submit" class="fas fa-search"></button>
+      </form>
+    </nav>
+
+    <!-- Conteúdo -->
+    <section class="py-5 text-center container-fluid verificador">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="text-light">Verificador de URL para notícias falsas:</h1>
+          <p class="lead text-muted">
+            Com a nossa ferramenta verificadora de notícias falsas, você pode
+            consultar o link de qualquer notícia que suspeita ser falsa e
+            buscá-la no nosso banco de dados !
+          </p>
+          <form class="my-5" action="">
+            <input
+              type="text"
+              class="search_input"
+              placeholder="Cole aqui o link da notícia para verificar"
+            />
+            <button class="btn-verificar">Verificar</button>
+          </form>
+          <div class="sm">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin-in"></a>
+            <a href="#" class="fab fa-youtube"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 text-center container coletanea">
+      <h1 class="my-5 text-center">Últimas notícias pesquisadas:</h1>
+      <div class="row py-lg-3">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h2><b>1.</b> 50 anos do homem na lua</h2>
+          <h2><b>2.</b> Vírus de laboratório</h2>
+          <h2><b>3.</b> Bill Gates por trás de chips em crianças</h2>
+          <h2><b>4.</b> Celulares explodindo</h2>
+          <h2><b>5.</b> Chupa cabra</h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 container-fluid artigoTitle">
+      <h1 class="text-light">Últimas fake news catalogadas:</h1>
+    </section>
+
+    <section class="py-5 container-fluid artigos">
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-3 mb-3">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280" src="./img/lua.jpg" />
+                  <div class="card-body">
+                    <h4 class="card-title">50 anos do homem na lua</h4>
+                    <p class="card-text">
+                      O povo nao consegue aceitar a derrota, até agora nao
+                      apareceu nenhuma prova de fraude e ficam batendo nessa
+                      tecla.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <div class="card">
+                  <img
+                    class="img-fluid"
+                    alt="100%x280"
+                    src="./img/coronaviruz.jpg"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Vírus de laboratório</h4>
+                    <p class="card-text">
+                      Nenhuma evidencia cientifica que esse virus tenha saído de
+                      algum laboratório, teoria da conspiração total.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <div class="card">
+                  <img
+                    class="img-fluid"
+                    alt="100%x280"
+                    src="./img/billgates.jpg"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">
+                      Bill Gates por trás de chips em crianças
+                    </h4>
+                    <p class="card-text">
+                      Uma inovação para ajudar na volta as aulas presenciais e
+                      aparece gente doida loucura.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <div class="card">
+                  <img
+                    class="img-fluid"
+                    alt="100%x280"
+                    src="./img/celulares.jpg"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Celulares explodindo</h4>
+                    <p class="card-text">
+                      Provavelmente um boato plantado pela concorrente.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-3 mb-3">
+                <div class="card">
+                  <img
+                    class="img-fluid"
+                    alt="100%x280"
+                    src="./img/chupaCabra.jpg"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Chupa cabra</h4>
+                    <p class="card-text">
+                      Desde que me entendo por gente eu vejo boatos desse chupa
+                      cabra, não passa de uma lenda.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <div class="card">
+                  <img
+                    class="img-fluid"
+                    alt="100%x280"
+                    src="./img/vacina.jpg"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Vacinas</h4>
+                    <p class="card-text">
+                      Só analisar os dados dos países com alta cobertura vacinal
+                      e ver o numero de casos das doenças.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <div class="card">
+                  <img
+                    class="img-fluid"
+                    alt="100%x280"
+                    src="./img/planeta-terra-plana.png"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Terra plana</h4>
+                    <p class="card-text">
+                      Erastóstenes ficaria decepcionado de ver que até hoje tem
+                      gente que acredita que a terra é plana.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <div class="card">
+                  <img
+                    class="img-fluid"
+                    alt="100%x280"
+                    src="./img/eleicao.png"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Fraude nas eleiçoes americanas</h4>
+                    <p class="card-text">
+                      O povo nao consegue aceitar a derrota, até agora nao
+                      apareceu nenhuma prova de fraude e ficam batendo nessa
+                      tecla.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer-container">
+      <div class="footer">
+        <div class="footer-heading footer1">
+          <h2>Sobre nós</h2>
+          <a href="index.html">Blog</a>
+          <a href="verificador.html">Verificação por URL</a>
+          <a href="FAQ.html">FAQ/Ajuda</a>
+          <a href="#">Criadores</a>
+          <a href="#">História</a>
+          <a href="#">Termos de serviço</a>
+        </div>
+
+        <div class="footer-heading footer2">
+          <h2>Contatos</h2>
+          <a href="#">Contatos</a>
+          <a href="#">Suporte</a>
+          <a href="#">Nos apoie</a>
+        </div>
+
+        <div class="footer-heading footer4">
+          <h2>Serviços</h2>
+          <a href="#">Notícias recentes</a>
+          <a href="verificador.html">Verificação por URL</a>
+          <a href="FAQ.html">Saiba evitar as Fake News</a>
+        </div>
+
+        <div class="footer-heading footer3">
+          <h2>Mídias Sociais</h2>
+          <div class="sm">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="./js/header.js"></script>
+    <script src="./js/form.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

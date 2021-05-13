@@ -1,0 +1,15 @@
+/* coletanea */
+.coletanea h2 {
+  margin-bottom: 40px;
+}
+.carousel-inner .card {
+  height: 550px;
+}
+
+.collapse .card-body,
+.collapsing .card-body {
+  background-color: #1e232b;
+  color: white;
+  border: 3;
+  border-color: red;
+}
