@@ -19,7 +19,8 @@
 
 ## Arquitetura da solução
 
-Documentacao/images/diagrama de soluçoes.jpeg
+https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2021-1-ti1-7946100-03-fake-news-1/blob/0d9b2c4b740239ea3fa7a2b76619b6324d58d710/Documentacao/images/diagrama%20de%20solu%C3%A7oes.jpeg
+
 
 > Inclua um diagrama da solução e descreva os módulos e as tecnologias
 > que fazem parte da solução. Discorra sobre o diagrama.
