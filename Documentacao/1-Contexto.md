@@ -1,61 +1,43 @@
 # Introdução
 
 ## Problema
-> Nesse momento você deve apresentar o problema que a sua aplicação deve
-> resolver. No entanto, não é a hora de comentar sobre a aplicação.
-> Descreva também o contexto em que essa aplicação será usada, se
-> houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de
-> fato existir, pois ainda não é a hora de apresentar requisitos
-> detalhados ou projetos.
->
-> Nesse momento, o grupo pode optar por fazer uso
-> de ferramentas como Design Thinking, que permite um olhar de ponta a
-> ponta para o problema.
->
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+Conforme exposto, o problema que se busca resolver com este projeto é o crescente aumento de fake news que a sociedade está exposta. Existe a falta notável de meios para validar a veracidade de notícias, canais educativos para conscientização e incentivação do senso crítico da população.
+
 
 ## Objetivos
 
-> Aqui você deve descrever os objetivos do trabalho indicando que o
-> objetivo geral é desenvolver um software para solucionar o problema
-> apresentado acima. Apresente também alguns (pelo menos 2) objetivos
-> específicos dependendo de onde você vai querer concentrar a sua
-> prática investigativa, ou como você vai aprofundar no seu trabalho.
-> 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+O objetivo geral deste trabalho é a criação de um portal sobre fake news que apresenta ferramentas para validação destas, áreas educativas e divulgações diárias sobre o tema. 
+
+Como objetivos específicos, podemos ressaltar:
+>Fornecer uma plataforma intuitiva e de fácil utilização
+>Apresentar área de comentários nas notícias diárias para interação dos usuários
+>Integrar área de votação popular para filtrar notícias falsas
+>Entregar resultados confiáveis em relação à validação de notícias
+>Criação de um FAQ(Perguntas e Respostas) para instrução dos usuários sobre como identificar fake news
+
 
 ## Justificativa
 
-> Descreva a importância ou a motivação para trabalhar com esta aplicação
-> que você escolheu. Indique as razões pelas quais você escolheu seus
-> objetivos específicos ou as razões para aprofundar em certos aspectos
-> do software.
-> 
-> O grupo de trabalho pode fazer uso de questionários, entrevistas e
-> dados estatísticos, que podem ser apresentados, com o objetivo de
-> esclarecer detalhes do problema que será abordado pelo grupo.
->
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Em nossa sociedade, o poder das informações vem cada dia se tornando mais presente no contexto atual da população. Cada vez mais é notável o consumo destas, principalmente com o advento da internet e redes sociais.
+
+Em paralelo, a grande disseminação de notícias e o fácil acesso à informação nos dias atuais, existe a produção de notícias falsas que acabam se tornando frequentes em nosso cotidiano. Sites, autores, perfis, veículos de informação em geral conhecidos e  desconhecidos publicam notícias o tempo todo, mas por vezes essas notícias não contém informações de cunho verdadeiro. Esse tipo de texto, em sua maior parte, é feito e divulgado com o objetivo de legitimar um ponto de vista ou prejudicar uma pessoa ou grupo (geralmente figuras públicas).
+
+As Fake News têm um grande poder viral, ou seja, espalham-se rapidamente. As informações falsas apelam para o emocional do leitor, fazendo com que as pessoas consumam o material “noticioso” sem confirmar se é verdade seu conteúdo.
+O poder de persuasão das Fake News é maior em populações com menor escolaridade e que dependem das redes sociais para obter informações. No entanto, as notícias falsas também podem alcançar pessoas com mais estudo, já que o conteúdo está comumente ligado ao viés político.
+Diante disso, torna-se fundamental que existam canais de informação e mecanismos que permitam o usuário verificar as informações das notícias e acessar conteúdos confiáveis, de maneira prática e eficiente.
+
+
+Em estudo “Iceberg digital”, desenvolvido pela Kaspersky, empresa global de cibersegurança, em parceria com a empresa de pesquisa CORPA, na América Latina, fica claro o volume preocupante de informações falsas sendo propagadas. O estudo analisou a atual situação da segurança dos internautas da Argentina, Brasil, Chile, Colômbia, México e Peru, a fim de descobrir o quão vulnerável eles são às fake news quando se conectam à internet. 
+
+Segundo a pesquisa, os peruanos (79%) são os que menos conseguem identificar uma notícia falsa, seguidos pelos colombianos (73%) e chilenos (70%). Os brasileiros ocupam o último lugar na pesquisa, com 62%(Número ainda muito preocupante), logo atrás dos mexicanos e argentinos, com 66% cada.
+
+Em relação ao Brasil, apesar de uma maior preocupação quanto à veracidade das informações, o brasileiro é notoriamente procrastinador e detém uma falta de tempo que não permite uma melhor verificação das notícias. Portanto, surge a necessidade de aplicações de verificação destas mesmas, de forma mais centralizada e confiável. Visando à fácil verificação e filtragem das informações de qualidade.
+
 
 ## Público-Alvo
 
-> Descreva quem serão as pessoas que usarão a sua aplicação indicando os
-> diferentes perfis. O objetivo aqui não é definir quem serão os
-> clientes ou quais serão os papéis dos usuários na aplicação. A ideia
-> é, dentro do possível, conhecer um pouco mais sobre o perfil dos
-> usuários: conhecimentos prévios, relação com a tecnologia, relações
-> hierárquicas, etc.
->
-> Adicione informações sobre o público-alvo por meio de uma descrição
-> textual, ou diagramas de personas, mapa de stakeholders, ou como o
-> grupo achar mais conveniente.
-> 
-> **Links Úteis**:
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+Embora todas as pessoas possam se beneficiar de soluções isentas para se informarem por meio de informações idôneas, o foco deste trabalho está no público que tem o hábito de ler notícias sobre diversos assuntos no seu dia a dia, com o intuito de se informarem sobre  o que está acontecendo no mundo e na sociedade, porém, identificamos que os idosos em geral costumam ter mais dificuldade com a tecnologia.
+
+Desta forma, estabeleceu-se como público-alvo desta solução os homens e as mulheres acima de 60 anos (idosos), que fazem uso frequente de computadores e dispositivos móveis para se atualizarem com diversos tipos de informações e notícias, e que muitas vezes não buscam confirmar a veracidade das informações, ou não possuem meios otimizados e de interface amigável para poder realizar a verificação.
+
  
