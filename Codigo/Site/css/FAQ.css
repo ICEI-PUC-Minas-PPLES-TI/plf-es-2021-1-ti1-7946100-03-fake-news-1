@@ -1,10 +1,10 @@
 .pergunta {
   text-decoration: none;
-  color: red;
+  color: white;
 }
 
 .pergunta:hover {
-  color: white;
+  color: red;
 }
 
 /* Formulário */
