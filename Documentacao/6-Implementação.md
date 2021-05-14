@@ -21,6 +21,17 @@
 
 ![Exemplo de UserFlow](images/diagrama.jpeg)
 
+A solução implementada conta com os seguintes módulos:
+Navegador - Interface básica do sistema 
+Páginas Web - Conjunto de arquivos HTML, CSS e imagens que implementam os requisitos do sistema.
+Local Storage - armazenamento mantido no Navegador 
+Notícias - Textos e imagens exibidos na página inicial 
+Comentários - caixa de texto registro de opiniões para os usuários conversarem sobre as notícias
+Seções - lista de notícias agrupadas por assunto.
+Repositório -  Armazenamento do código fonte do website
+Hospedagem - local na Internet onde as páginas são mantidas e acessadas pelo navegador. 
+
+
 
 > Inclua um diagrama da solução e descreva os módulos e as tecnologias
 > que fazem parte da solução. Discorra sobre o diagrama.
