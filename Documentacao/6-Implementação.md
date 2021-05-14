@@ -48,6 +48,9 @@ que o usuário entra na plataforma, ele é apresentado à tela inicial
 (Tela 1) onde ele é confrontado com as opões de editar seu perfil ou
 então visualizar sua galeria.
 
+
+![Exemplo de UserFlow](images/userflow.jpeg)
+
 Caso ele opte por seguir pelo primeiro caminho (Editar Perfil), ele é
 redirecionado para a tela de edição de perfil (Tela 2), onde pode
 atualizar seus dados cadastrais. Nessa tela, o usuário também pode
