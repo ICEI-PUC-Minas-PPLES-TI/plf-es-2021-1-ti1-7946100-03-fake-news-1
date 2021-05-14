@@ -49,7 +49,7 @@ que o usuário entra na plataforma, ele é apresentado à tela inicial
 então visualizar sua galeria.
 
 
-![Exemplo de UserFlow](images/userflow.jpeg)
+![UserFlow](images/userflow.jpeg)
 
 Caso ele opte por seguir pelo primeiro caminho (Editar Perfil), ele é
 redirecionado para a tela de edição de perfil (Tela 2), onde pode
