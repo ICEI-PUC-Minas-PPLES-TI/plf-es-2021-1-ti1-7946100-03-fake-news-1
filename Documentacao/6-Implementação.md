@@ -19,6 +19,8 @@
 
 ## Arquitetura da solução
 
+Documentacao/images/diagrama de soluçoes.jpeg
+
 > Inclua um diagrama da solução e descreva os módulos e as tecnologias
 > que fazem parte da solução. Discorra sobre o diagrama.
 
