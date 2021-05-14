@@ -13,7 +13,7 @@ O poder de persuasão das Fake News é maior em populações com menor escolarid
 * Kaio Henrique Oliveira da Silveira Barbosa
 * Igor Siqueira Massaro
 * Luiz Guilherme Nogueira Soares
-* Bernardo Aquino Capelo Coelho
+* Bernardo Aquino Capello Coelho
 * Pedro Luis Gonçalves
 
 ## Professores responsáveis
