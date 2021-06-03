@@ -157,7 +157,7 @@ $("#btnVerificar").click(() => {
           text: "A noticia verificada é possivelmente uma Fake News!",
           confirmButtonText: "Entendi",
           footer:
-            '<a href="verificador.html">Acha que isso é um erro? Preencha esse formulário</a>', //mandar para a section que o luiz criou
+            '<a href="verificador.html#comunidade">Acha que isso é um erro? Preencha esse formulário</a>', //mandar para a section que o luiz criou
         });
       }
     }
