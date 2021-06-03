@@ -159,7 +159,7 @@ body {
   text-align: justify;
 }
 .likeComment a,
-span {
+.likeComment span {
   color: #fff;
   font-size: 22px;
   margin: 0 10px;
@@ -301,6 +301,99 @@ hr {
   text-align: justify;
 }
 
+/* Loading */
+.container .preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 20;
+  transition: 0.9s;
+}
+.container .preloader::before,
+.container .preloader::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100vh;
+  background: #262626;
+  transition: 0.9s;
+}
+.container .preloader::before {
+  left: 0;
+}
+.container .preloader::after {
+  right: 0;
+}
+.container .preloader.complete::before {
+  left: -50%;
+}
+.container .preloader.complete::after {
+  right: -50%;
+}
+
+/********************  Loader ********************/
+.container .preloader .loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  border: 5px solid #fff;
+  z-index: 2;
+  overflow: hidden;
+  animation: animateLoader 2s infinite linear;
+}
+.container .preloader .loader::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  animation: animateBefore 2s infinite linear;
+}
+@keyframes animateBefore {
+  0% {
+    top: 100%;
+  }
+  25% {
+    top: 0;
+  }
+  50% {
+    top: 0;
+  }
+  75% {
+    top: 100%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+@keyframes animateLoader {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  25% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+  75% {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.container .preloader.complete {
+  opacity: 0;
+  visibility: hidden;
+}
 /* footer */
 
 .footer-container {

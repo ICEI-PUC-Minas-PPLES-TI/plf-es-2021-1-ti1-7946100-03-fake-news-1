@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/verificador.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
@@ -19,6 +20,12 @@
     />
   </head>
   <body>
+    <div class="container">
+      <div class="preloader complete">
+        <div class="loader"></div>
+      </div>
+    </div>
+
     <!-- Navbar -->
     <nav>
       <div class="menu-icon">
@@ -57,14 +64,15 @@
             consultar o link de qualquer notícia que suspeita ser falsa e
             buscá-la no nosso banco de dados !
           </p>
-          <form class="my-5" action="">
+          <div class="my-5">
             <input
               type="text"
               class="search_input"
               placeholder="Cole aqui o link da notícia para verificar"
+              id="inputVerificar"
             />
-            <button class="btn-verificar">Verificar</button>
-          </form>
+            <button id="btnVerificar" class="btn-verificar">Verificar</button>
+          </div>
           <div class="sm">
             <a href="#" class="fab fa-facebook-f"></a>
             <a href="#" class="fab fa-twitter"></a>
@@ -256,6 +264,104 @@
         </button>
       </div>
     </section>
+    <section
+      class="py-5 text-center text-center container-fluid comunidadeTitle"
+    >
+      <h1>Sentindo falta de alguma notícia? Contribua conosco!</h1>
+      <p>
+        Nos envie alguma notícia que você acha que deveria estar no nosso
+        portal!<br />
+        Sua notícia será enviada e analisada por nossos especialistas, caso seja
+        aprovada passará a integrar nossa database!
+      </p>
+    </section>
+
+    <section class="pb-5 text-center container comunidade">
+      <div class="row py-lg-3">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <form
+            id="contact-form"
+            name="myForm"
+            class="form"
+            action="#"
+            onsubmit="return validateForm()"
+            method="POST"
+            role="form"
+          >
+            <div class="form-group">
+              <label class="form-label" id="nameLabel" for="name"></label>
+              <input
+                type="text"
+                class="form-control"
+                id="name1"
+                name="name1"
+                placeholder="Título da notícia"
+                tabindex="1"
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" id="emailLabel" for="email"></label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="Email(Não será exposto)"
+                tabindex="2"
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" id="subjectLabel" for="subject"></label>
+              <input
+                type="text"
+                class="form-control"
+                id="subject1"
+                name="subject1"
+                placeholder="Link da notícia"
+                tabindex="3"
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" id="messageLabel" for="message"></label>
+              <textarea
+                rows="6"
+                cols="60"
+                name="message"
+                class="form-control"
+                id="message"
+                placeholder="Conte-nos o porquê você acha que essa notícia é falsa!"
+                tabindex="4"
+              ></textarea>
+            </div>
+
+            <div class="text-center margin-top-25">
+              <button
+                id="myBtn"
+                type="submit"
+                class="btn btn-mod btn-border btn-large"
+              >
+                Submeter
+              </button>
+              <!-- A Modal -->
+              <div id="myModal" class="modal">
+                <!-- Conteúdo da modal -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>
+                    A notícia foi enviada para análise de nossos especialistas!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </form>
+          <!-- End form -->
+        </div>
+        <!-- End col -->
+      </div>
+    </section>
 
     <!-- Footer -->
     <div class="footer-container">
@@ -295,12 +401,18 @@
     </div>
 
     <!-- scripts -->
-    <script src="./js/header.js"></script>
-    <script src="./js/form.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.14.0/jquery.validate.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
       crossorigin="anonymous"
     ></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="./js/header.js"></script>
+    <script src="./js/cadastroNoticia.js"></script>
+    <script src="./js/verificador.js"></script>
   </body>
 </html>
