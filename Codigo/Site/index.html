@@ -1,338 +1,383 @@
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <title>AvisoFN</title>
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous" />
+</head>
+
+<body>
     <div class="container">
-      <div class="preloader complete">
-        <div class="loader"></div>
-      </div>
+        <div class="preloader complete">
+            <div class="loader"></div>
+        </div>
     </div>
 
     <!-- Navbar -->
     <nav>
-      <div class="menu-icon">
-        <span class="fas fa-bars"></span>
-      </div>
-      <div class="logo">AvisoFN</div>
-      <div class="nav-items">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./verificador.html">Verificador</a></li>
-        <li><a href="./FAQ.html">FAQ/Ajuda</a></li>
-      </div>
-      <div class="search-icon">
-        <span class="fas fa-search"></span>
-      </div>
-      <div class="cancel-icon">
-        <span class="fas fa-times"></span>
-      </div>
-      <form action="./noticiapesq.html">
-        <input
-          type="text"
-          name="query"
-          class="search-data"
-          placeholder="Pesquisar"
-          required
-        />
-        <button type="submit" class="fas fa-search" value="Pesquisar"></button>
-      </form>
+        <div class="menu-icon">
+            <span class="fas fa-bars"></span>
+        </div>
+        <div class="logo">AvisoFN</div>
+        <div class="nav-items">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./verificador.html">Verificador</a></li>
+            <li><a href="./FAQ.html">FAQ/Ajuda</a></li>
+        </div>
+        <div class="search-icon">
+            <span class="fas fa-search"></span>
+        </div>
+        <div class="cancel-icon">
+            <span class="fas fa-times"></span>
+        </div>
+        <form action="./noticiapesq.html">
+            <input type="text" name="query" class="search-data" placeholder="Pesquisar" required />
+            <button type="submit" class="fas fa-search" value="Pesquisar"></button>
+        </form>
     </nav>
 
     <!-- Conteúdo -->
     <section class="py-5 text-center container-fluid verificador">
-      <div class="row py-lg-5">
-        <div class="col-lg-6 col-md-8 mx-auto">
-          <h1 class="text-light">Verificador de URL para notícias falsas:</h1>
-          <p class="lead text-muted">
-            Com a nossa ferramenta verificadora de notícias falsas, você pode
-            consultar o link de qualquer notícia que suspeita ser falsa e
-            buscá-la no nosso banco de dados !
-          </p>
-          <div class="my-5">
-            <input
-              type="text"
-              class="search_input"
-              placeholder="Cole aqui o link ou título da notícia a ser verificada"
-              id="inputVerificar"
-            />
-            <button id="btnVerificar" class="btn-verificar">Verificar</button>
-          </div>
-          <div class="sm">
-            <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
-            <a href="https://twitter.com/" class="fab fa-twitter"></a>
-            <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
-            <a href="https://www.linkedin.com/" class="fab fa-linkedin-in"></a>
-            <a href="https://www.youtube.com/" class="fab fa-youtube"></a>
-          </div>
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="text-light">Verificador de URL para notícias falsas:</h1>
+                <p class="lead text-muted">
+                    Com a nossa ferramenta verificadora de notícias falsas, você pode
+                    consultar o link de qualquer notícia que suspeita ser falsa e
+                    buscá-la no nosso banco de dados !
+                </p>
+                <div class="my-5">
+                    <input type="text" class="search_input"
+                        placeholder="Cole aqui o link ou título da notícia a ser verificada" id="inputVerificar" />
+                    <button id="btnVerificar" class="btn-verificar">Verificar</button>
+                </div>
+                <div class="sm">
+                    <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+                    <a href="https://twitter.com/" class="fab fa-twitter"></a>
+                    <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+                    <a href="https://www.linkedin.com/" class="fab fa-linkedin-in"></a>
+                    <a href="https://www.youtube.com/" class="fab fa-youtube"></a>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
     <section class="py-5 container coletanea" id="noticiasRecentes">
-      <h1 class="my-5 text-center">
-        CONFIRA NOSSA COLETÂNEA DE FAKE NEWS MAIS RECENTES:
-      </h1>
-      <div class="row py-lg-3">
-        <div class="col-sm-12 col-md-6 mx-auto">
-          <img src="img/vaca.jpg" alt="" />
+        <h1 class="my-5 text-center">
+            CONFIRA NOSSA COLETÂNEA DE FAKE NEWS MAIS RECENTES:
+        </h1>
+        <div class="row py-lg-3">
+            <div class="col-sm-12 col-md-6 mx-auto">
+                <img src="img/vaca.jpg" alt="" />
+            </div>
+            <div class="col-sm-12 col-md-6 mx-auto">
+                <p class="text-muted">Fake News</p>
+                <h4>Urina de vaca como remédio contra o novo coronavírus</h4>
+                <p class="my-4 text-muted">
+                    A Índia é o país com mais notícias falsas checadas por jornalistas no mundo. O banco de dados da
+                    IFCN conta atualmente com 1.649 verificações do país. Uma das informações que rodou entre os
+                    indianos no começo da pandemia era de que a urina de vaca, animal que é considerado sagrado por lá,
+                    seria um remédio eficaz contra o covid. O Ministério de Saúde do país chegou a ser questionado em
+                    entrevista coletiva sobre o tratamento e desconversou. Houve até uma "festa" promovida por um grupo
+                    nacionalista para tomar a urina, que é um tratamento popular no país para diversas enfermidades
+                </p>
+            </div>
         </div>
-        <div class="col-sm-12 col-md-6 mx-auto">
-          <p class="text-muted">Fake News</p>
-          <h4>Urina de vaca como remédio contra o novo coronavírus</h4>
-          <p class="my-4 text-muted">
-            A Índia é o país com mais notícias falsas checadas por jornalistas no mundo. O banco de dados da IFCN conta atualmente com 1.649 verificações do país. Uma das informações que rodou entre os indianos no começo da pandemia era de que a urina de vaca, animal que é considerado sagrado por lá, seria um remédio eficaz contra o covid. O Ministério de Saúde do país chegou a ser questionado em entrevista coletiva sobre o tratamento e desconversou. Houve até uma "festa" promovida por um grupo nacionalista para tomar a urina, que é um tratamento popular no país para diversas enfermidades
-          </p>
+        <div class="row py-lg-3">
+            <div class="col-sm-12 col-md-6 mx-auto">
+                <img src="img/bolha.jpg" alt="" />
+            </div>
+            <div class="col-sm-12 col-md-6 mx-auto">
+                <p class="text-muted">Fake News</p>
+                <h4>Plástico bolha pode passar coronavírus</h4>
+                <p class="my-4 text-muted">
+                    Segundo lugar no ranking de checagens, os Estados Unidos é um grande celeiro de notícias surreais.
+                    Foi lá que as pessoas estavam tomando água sanitária ou injetando detergente na veia como método de
+                    cura para o covid. Lá surgiram ainda as grandes teorias da conspiração de que o vírus foi
+                    desenvolvido em laboratório. Em fevereiro, também circulou que estourar plástico bolha poderia expor
+                    as pessoas ao novo coronavírus. Isso aconteceria porque o plástico seria produzido por pessoas que o
+                    assopravam e que poderiam estar contagiadas. A notícia foi produzida por uma página de humor que foi
+                    retirada do ar pelo Facebook por "publicações falsas e conteúdo inflamatório
+                </p>
+            </div>
         </div>
-      </div>
-      <div class="row py-lg-3">
-        <div class="col-sm-12 col-md-6 mx-auto">
-          <img src="img/bolha.jpg" alt="" />
+        <div class="row py-lg-3">
+            <div class="col-sm-12 col-md-6 mx-auto">
+                <img src="img/termometro.jpg" alt="" />
+            </div>
+            <div class="col-sm-12 col-md-6 mx-auto">
+                <p class="text-muted">Fake News</p>
+                <h4>Termômetro mata neurônios</h4>
+                <p class="my-4 text-muted">
+                    Uma fake news que se espalhou bastante pela América Latina nos últimos meses falava de possíveis
+                    danos causados pelos termômetros infravermelhos, aqueles usados para medir a temperatura dos
+                    clientes na entrada de supermercados. Na Colômbia, quinto lugar em quantidade de checagens,
+                    viralizou a história que estes aparelhinhos causam a "morte de neurônios". Também já havia circulado
+                    que este termômetro é capaz de queimar a retina e afetava a glândula pineal, estrutura do cérebro
+                    responsável pela regulação do ciclo do sono.
+                </p>
+            </div>
         </div>
-        <div class="col-sm-12 col-md-6 mx-auto">
-          <p class="text-muted">Fake News</p>
-          <h4>Plástico bolha pode passar coronavírus</h4>
-          <p class="my-4 text-muted">
-            Segundo lugar no ranking de checagens, os Estados Unidos é um grande celeiro de notícias surreais. Foi lá que as pessoas estavam tomando água sanitária ou injetando detergente na veia como método de cura para o covid. Lá surgiram ainda as grandes teorias da conspiração de que o vírus foi desenvolvido em laboratório. Em fevereiro, também circulou que estourar plástico bolha poderia expor as pessoas ao novo coronavírus. Isso aconteceria porque o plástico seria produzido por pessoas que o assopravam e que poderiam estar contagiadas. A notícia foi produzida por uma página de humor que foi retirada do ar pelo Facebook por "publicações falsas e conteúdo inflamatório
-          </p>
-        </div>
-      </div>
-      <div class="row py-lg-3">
-        <div class="col-sm-12 col-md-6 mx-auto">
-          <img src="img/termometro.jpg" alt="" />
-        </div>
-        <div class="col-sm-12 col-md-6 mx-auto">
-          <p class="text-muted">Fake News</p>
-          <h4>Termômetro mata neurônios</h4>
-          <p class="my-4 text-muted">
-            Uma fake news que se espalhou bastante pela América Latina nos últimos meses falava de possíveis danos causados pelos termômetros infravermelhos, aqueles usados para medir a temperatura dos clientes na entrada de supermercados. Na Colômbia, quinto lugar em quantidade de checagens, viralizou a história que estes aparelhinhos causam a "morte de neurônios". Também já havia circulado que este termômetro é capaz de queimar a retina e afetava a glândula pineal, estrutura do cérebro responsável pela regulação do ciclo do sono.
-          </p>
-        </div>
-      </div>
     </section>
 
     <section class="py-5 text-center container-fluid subscribe-area">
-      <div class="row py-lg-5">
-        <div class="col-md-4">
-          <div class="subscribe-text mb-15">
-            <span>PARA RECEBER NOSSA NEWSLETTER</span>
-            <h2>Increva-se</h2>
-          </div>
-        </div>
-        <div class="col-md-8">
-          <div class="subscribe-wrapper subscribe2-wrapper mb-15">
-            <div class="subscribe-form">
-              <form action="#">
-                <input placeholder="coloque seu endereço de email" type="email">
-                <button>Inscreva-se <i class="fas fa-long-arrow-alt-right"></i></button>
-              </form>
+        <div class="row py-lg-5">
+            <div class="col-md-4">
+                <div class="subscribe-text mb-15">
+                    <span>PARA RECEBER NOSSA NEWSLETTER</span>
+                    <h2>Increva-se</h2>
+                </div>
             </div>
-          </div>
+            <div class="col-md-8">
+                <div class="subscribe-wrapper subscribe2-wrapper mb-15">
+                    <div class="subscribe-form">
+                        <form action="#">
+                            <input placeholder="coloque seu endereço de email" type="email">
+                            <button>Inscreva-se <i class="fas fa-long-arrow-alt-right"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      </div>
+        </div>
     </section>
 
     <section class="py-5 container-fluid artigoTitle">
-      <h1 class="text-light">
-        Leia nossos artigos sobre as fake news mais recentes:
-      </h1>
+        <h1 class="text-light">
+            Leia nossos artigos sobre as fake news mais recentes:
+        </h1>
     </section>
 
     <section class="py-5 container-fluid artigos">
-      <div class="row py-lg-3">
-        <div class="col-sm-12 col-md-6 mx-auto">
-          <p class="my-4 mx-4 text-muted">Medidas contra Fake News</p>
-          <h3 class="my-5 mx-4 text-light">PF volta a prender blogueiro bolsonarista Oswaldo Eustáquio após ele burlar.</h3>
-          <p class="my-4 mx-4 text-muted">
-            Segundo ministro do STF Alexandre de Moraes, Eustáquio violou as regras a que foi submetido após ser solto em julho por usar redes sociais para atacar candidato a prefeito de São Paulo. A Polícia Federal (PF) voltou a prender o blogueiro Oswaldo Eustáquio. O ministro Alexandre de Moraes, do Supremo Tribunal Federal (STF), determinou que ele seja colocado em prisão domiciliar, com uso de tornozeleira eletrônica
-            Na decisão em que ordenou a prisão, Moraes frisou que Eustáquio violou as medidas restritivas a que foi submetido após ser solto em julho, entre as quais a proibição de usar redes sociais e de se ausentar do Distrito Federal (DF). Mesmo impedido de frequentar as redes sociais, Eustáquio "desrespeitou a ordem judicial e foi autor de inúmeras fake news em que imputou crimes a candidato a prefeito da cidade de São Paulo", escreveu o ministro.
-            
-          </p>
-          <div class="likeComment mx-4">
-            <a href="#" class="fas fa-comment"></a><span>4</span>
-            <a href="#" class="fas fa-heart mx-4"><span>15</span></a>
-          </div>
+        <div class="row py-lg-3">
+            <div class="col-sm-12 col-md-6 mx-auto">
+                <p class="my-4 mx-4 text-muted">Medidas contra Fake News</p>
+                <h3 class="my-5 mx-4 text-light">PF volta a prender blogueiro bolsonarista Oswaldo Eustáquio após ele
+                    burlar.</h3>
+                <p class="my-4 mx-4 text-muted">
+                    Segundo ministro do STF Alexandre de Moraes, Eustáquio violou as regras a que foi submetido após ser
+                    solto em julho por usar redes sociais para atacar candidato a prefeito de São Paulo. A Polícia
+                    Federal (PF) voltou a prender o blogueiro Oswaldo Eustáquio. O ministro Alexandre de Moraes, do
+                    Supremo Tribunal Federal (STF), determinou que ele seja colocado em prisão domiciliar, com uso de
+                    tornozeleira eletrônica
+                    Na decisão em que ordenou a prisão, Moraes frisou que Eustáquio violou as medidas restritivas a que
+                    foi submetido após ser solto em julho, entre as quais a proibição de usar redes sociais e de se
+                    ausentar do Distrito Federal (DF). Mesmo impedido de frequentar as redes sociais, Eustáquio
+                    "desrespeitou a ordem judicial e foi autor de inúmeras fake news em que imputou crimes a candidato a
+                    prefeito da cidade de São Paulo", escreveu o ministro.
+
+                </p>
+                <div class="likeComment mx-4">
+                    <a href="#" class="fas fa-comment"></a><span>4</span>
+                    <a href="#" class="fas fa-heart mx-4"><span>15</span></a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 mx-auto">
+                <p class="my-4 mx-4 text-muted">Fake News</p>
+                <h3 class="my-5 mx-4 text-light">O bebê mandou comer ovos.</h3>
+                <p class="my-4 mx-4 text-muted">
+                    Nas Filipinas, um vídeo que alcançou a marca de mais de 1,4 milhão de visualizações apresentava o
+                    relato de uma mulher contando que um bebê recém-nascido havia falado que comer ovos cozidos era a
+                    cura para o covid. Além de falsa, a história é copiada. Um relato semelhante já tinha sido
+                    viralizado na Indonésia e na China, mas sem o mesmo alcance. No caso chinês, quem revelou sobre a
+                    "eficácia" dos ovos cozidos foi um porco e a mulher que espalhou o boato teve de cumprir uma pena de
+                    dez dias de prisão.
+                </p>
+                <div class="likeComment mx-4">
+                    <a href="#" class="fas fa-comment"></a><span>10</span>
+                    <a href="#" class="fas fa-heart mx-4"><span>5</span></a>
+                </div>
+            </div>
         </div>
-        <div class="col-sm-12 col-md-6 mx-auto">
-          <p class="my-4 mx-4 text-muted">Fake News</p>
-          <h3 class="my-5 mx-4 text-light">O bebê mandou comer ovos.</h3>
-          <p class="my-4 mx-4 text-muted">
-            Nas Filipinas, um vídeo que alcançou a marca de mais de 1,4 milhão de visualizações apresentava o relato de uma mulher contando que um bebê recém-nascido havia falado que comer ovos cozidos era a cura para o covid. Além de falsa, a história é copiada. Um relato semelhante já tinha sido viralizado na Indonésia e na China, mas sem o mesmo alcance. No caso chinês, quem revelou sobre a "eficácia" dos ovos cozidos foi um porco e a mulher que espalhou o boato teve de cumprir uma pena de dez dias de prisão. 
-          </p>
-          <div class="likeComment mx-4">
-            <a href="#" class="fas fa-comment"></a><span>10</span>
-            <a href="#" class="fas fa-heart mx-4"><span>5</span></a>
-          </div>
-        </div>
-      </div>
     </section>
 
     <section class="py-5 text-center text-center container-fluid comunidadeTitle">
-      <h1>
-        Interaja com a comunidade!
-      </h1>
-      <p>Contribua conosco! Comente alguma notícia ou submeta algum link para avaliação e discussão com a comunidade ! Os comentários com mais engajamento ficam no topo!</p>
+        <h1>
+            Interaja com a comunidade!
+        </h1>
+        <p>Contribua conosco! Comente alguma notícia ou submeta algum link para avaliação e discussão com a comunidade !
+            Os comentários com mais engajamento ficam no topo!</p>
     </section>
 
     <section class="pb-5 text-center container comunidade">
-    <div class="row py-lg-3">
+        <div class="row py-lg-3">
 
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
-            <form id="contact-form" name="myForm" class="form" action="#" onsubmit="return validateForm()" method="POST" role="form">
+                <form id="contact-form" name="myForm" class="form" action="#" onsubmit="return validateForm()"
+                    method="POST" role="form">
 
-                <div class="form-group">
-                    <label class="form-label" id="nameLabel" for="name"></label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Nome" tabindex="1">
-                </div>
+                    <div class="form-group">
+                        <label class="form-label" id="nameLabel" for="name"></label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Nome" tabindex="1">
+                    </div>
 
-                <div class="form-group">
-                    <label class="form-label" id="emailLabel" for="email"></label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Email(Não será exposto)" tabindex="2">
-                </div>
+                    <div class="form-group">
+                        <label class="form-label" id="emailLabel" for="email"></label>
+                        <input type="email" class="form-control" id="email" name="email"
+                            placeholder="Email(Não será exposto)" tabindex="2">
+                    </div>
 
-                <div class="form-group">
-                    <label class="form-label" id="subjectLabel" for="sublect"></label>
-                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Assunto" tabindex="3">
-                </div>
+                    <div class="form-group">
+                        <label class="form-label" id="subjectLabel" for="sublect"></label>
+                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Assunto"
+                            tabindex="3">
+                    </div>
 
-                <div class="form-group">
-                    <label class="form-label" id="messageLabel" for="message"></label>
-                    <textarea rows="6" cols="60" name="message" class="form-control" id="message" placeholder="Mensagem" tabindex="4"></textarea>                                 
-                </div>
+                    <div class="form-group">
+                        <label class="form-label" id="messageLabel" for="message"></label>
+                        <textarea rows="6" cols="60" name="message" class="form-control" id="message"
+                            placeholder="Mensagem" tabindex="4"></textarea>
+                    </div>
 
-                <div class="text-center margin-top-25">
-                    <button type="submit" class="btn btn-mod btn-border btn-large">Submeter</button>
-                </div>
+                    <div class="text-center margin-top-25">
+                        <button type="submit" class="btn btn-mod btn-border btn-large">Submeter</button>
+                    </div>
 
-            </form><!-- End form -->
-          
-        </div><!-- End col -->
-      </div>
+                </form><!-- End form -->
+
+            </div><!-- End col -->
+        </div>
     </section>
 
     <section class="py-5 container-fluid comentariosTitle">
-      <h1 class="text-light">
-        Comentários mais engajados nas últimas 24h
-      </h1>
+        <h1 class="text-light">
+            Comentários mais engajados nas últimas 24h
+        </h1>
     </section>
 
     <section class="pb-5 container-fluid comentarios">
-      <div class="row py-lg-3">
-        <div class="col d-flex align-items-center justify-content-center mb-4">
-          <img src="img/pessoa3.jpg" alt="" />
-          <p class="mx-4 text-muted">Maria Elizabete</p>
-        </div>
-        <div class="col-sm-12 col-md-6 mx-auto">
-          <h3 class="mx-4 text-light">Notícias falsas não são jornalismo.<span class="data text-muted">06 de maio de 2021</span></h3>
-          <p class="my-4 mx-4 text-muted comentario">
-            Talvez devêssemos pensar sobre o que nós [as mídias convencionais] fizemos com o jornalismo a ponto de permitir que notícias falsas se tornassem tão facilmente aceitas e tão fáceis de serem disseminadas. Eu penso que devemos olhar para dentro nós mesmos para saber se estamos fazendo as coisas certas, se estamos nos comportando da maneira certa, se procuramos ser éticos no jornalismo – isso pode impedir que as notícias falsas tenham o poder e a influência que têm, e interromper esse processo de crescimento de que gozam.
-          </p>
-          <div class="likeComment mx-4">
-            <a href="#" id="like" class="fas fa-thumbs-up"></a><span>100</span>
-            <a href="#" id="deslike" class="fas fa-thumbs-down mx-4"><span>15</span></a>
-          </div>
-        </div>
-      </div>
-      <hr />
-      <div class="row py-lg-3 ">
-        <div class="col d-flex align-items-center justify-content-center mb-4">
-          <img src="img/pessoa1.jpg" alt="" />
-          <p class="mx-4 text-muted">João Ricardo</p>
-        </div>
-        <div class="col-sm-12 col-md-6 mx-auto">
-          <h3 class="mx-4 text-light">Impressionante!<span class="data text-muted">12 de abril de 2021</span></h3>
-          <p class="my-4 mx-4 text-muted comentario">
-            As notícias falsas reforçam a missão tradicional do jornalismo, que é tentar iluminar a escuridão para as sociedades e para o público em geral. Nossa missão tem de ser reforçada nesse valor essencial, tentando iluminar o debate, tentando mostrar ao público onde estão os fatos reais e os debates reais.
-          </p>
-          <div class="likeComment mx-4">
-            <a href="#" id="like" class="fas fa-thumbs-up"></a><span>44</span>
-            <a href="#" id="deslike" class="fas fa-thumbs-down mx-4"><span>3</span></a>
-          </div>
-        </div>
-      </div>
-      <hr />
-      <div class="row py-lg-3">
-        <div class="col d-flex align-items-center justify-content-center mb-4">
-          <img src="img/pessoa2.jpg" alt="" />
-          <p class="mx-4 text-muted">Caio Lucio</p>
-        </div>
-        <div class="col-sm-12 col-md-6 mx-auto">
-          <h3 class="mx-4 text-light">Não acredito que ela ainda existam!<span class="data text-muted">10 de março de 2021</span></h3>
-          <p class="my-4 mx-4 text-muted comentario">
-            As notícias falsas envenenam a atmosfera em que todos operamos. Por causa da existência das notícias falsas, o público agora duvida de todas as notícias. Isso realmente prejudicou a relação do público com a mídia
-          </p>
-          <div class="likeComment mx-4">
-            <a href="#" id="like" class="fas fa-thumbs-up"></a><span>20</span>
-            <a href="#" id="deslike" class="fas fa-thumbs-down mx-4"><span>0</span></a>
-          </div>
-        </div>
-      </div>
+        <div class="row py-lg-3">
+            <div class="col d-flex align-items-center justify-content-center mb-4">
+                <img src="img/pessoa3.jpg" alt="" />
+                <p class="mx-4 text-muted">Maria Elizabete</p>
+            </div>
+            <div class="col-sm-12 col-md-6 mx-auto">
+                <h3 class="mx-4 text-light">Notícias falsas não são jornalismo.<span class="data text-muted">06 de maio
+                        de 2021</span></h3>
+                <p class="my-4 mx-4 text-muted comentario">
+                    Talvez devêssemos pensar sobre o que nós [as mídias convencionais] fizemos com o jornalismo a ponto
+                    de permitir que notícias falsas se tornassem tão facilmente aceitas e tão fáceis de serem
+                    disseminadas. Eu penso que devemos olhar para dentro nós mesmos para saber se estamos fazendo as
+                    coisas certas, se estamos nos comportando da maneira certa, se procuramos ser éticos no jornalismo –
+                    isso pode impedir que as notícias falsas tenham o poder e a influência que têm, e interromper esse
+                    processo de crescimento de que gozam.
+                </p>
+                <div class="likeComment mx-4">
+                    <div class="likeComment mx-4">
+                        <a href="#" id="like-1" onclick="likeButtonClicked('like-1', 'quantidadeLikes-1')"
+                            class="fas fa-thumbs-up"></a><span id="quantidadeLikes-1">100</span>
+
+                        <a href="#" id="deslike-1" onclick="deslikeButtonClicked('deslike-1', 'quantidadeDeslikes-1')"
+                            class="fas fa-thumbs-down mx-4"><span id="quantidadeDeslikes-1">15</span></a>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="row py-lg-3 ">
+                <div class="col d-flex align-items-center justify-content-center mb-4">
+                    <img src="img/pessoa1.jpg" alt="" />
+                    <p class="mx-4 text-muted">João Ricardo</p>
+                </div>
+                <div class="col-sm-12 col-md-6 mx-auto">
+                    <h3 class="mx-4 text-light">Impressionante!<span class="data text-muted">12 de abril de 2021</span>
+                    </h3>
+                    <p class="my-4 mx-4 text-muted comentario">
+                        As notícias falsas reforçam a missão tradicional do jornalismo, que é tentar iluminar a
+                        escuridão para as
+                        sociedades e para o público em geral. Nossa missão tem de ser reforçada nesse valor essencial,
+                        tentando
+                        iluminar o debate, tentando mostrar ao público onde estão os fatos reais e os debates reais.
+                    </p>
+                    <div class="likeComment mx-4">
+                        <a href="#" id="like-2" onclick="likeButtonClicked('like-2', 'quantidadeLikes-2')"
+                            class="fas fa-thumbs-up"></a><span id="quantidadeLikes-2">44</span>
+                        <a href="#" id="deslike-2" onclick="deslikeButtonClicked('deslike-2', 'quantidadeDeslikes-2')"
+                            class="fas fa-thumbs-down mx-4"><span id="quantidadeDeslikes-2">3</span></a>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="row py-lg-3">
+                <div class="col d-flex align-items-center justify-content-center mb-4">
+                    <img src="img/pessoa2.jpg" alt="" />
+                    <p class="mx-4 text-muted">Caio Lucio</p>
+                </div>
+                <div class="col-sm-12 col-md-6 mx-auto">
+                    <h3 class="mx-4 text-light">Não acredito que ela ainda existam!<span class="data text-muted">10 de
+                            março de
+                            2021</span></h3>
+                    <p class="my-4 mx-4 text-muted comentario">
+                        As notícias falsas envenenam a atmosfera em que todos operamos. Por causa da existência das
+                        notícias falsas, o
+                        público agora duvida de todas as notícias. Isso realmente prejudicou a relação do público com a
+                        mídia
+                    </p>
+                    <div class="likeComment mx-4">
+                        <a href="#" id="like-3" onclick="likeButtonClicked('like-3', 'quantidadeLikes-3')"
+                            class="fas fa-thumbs-up"></a><span id="quantidadeLikes-3">20</span>
+                        <a href="#" id="deslike-3" onclick="deslikeButtonClicked('deslike-3', 'quantidadeDeslikes-3')"
+                            class="fas fa-thumbs-down mx-4"><span id="quantidadeDeslikes-3">0</span></a>
+                    </div>
+                </div>
+            </div>
     </section>
 
     <!-- Footer -->
     <div class="footer-container">
-      <div class="footer">
-          <div class="footer-heading footer1">
-              <h2>Sobre nós</h2>
-              <a href="index.html">Blog</a>
-              <a href="verificador.html">Verificação por URL</a>
-              <a href="FAQ.html">FAQ/Ajuda</a>
-              <a href="index.html">Criadores/História</a>
-              <a href="index.html">Termos de serviço</a>
-          </div>
+        <div class="footer">
+            <div class="footer-heading footer1">
+                <h2>Sobre nós</h2>
+                <a href="index.html">Blog</a>
+                <a href="verificador.html">Verificação por URL</a>
+                <a href="FAQ.html">FAQ/Ajuda</a>
+                <a href="index.html">Criadores/História</a>
+                <a href="index.html">Termos de serviço</a>
+            </div>
 
-          <div class="footer-heading footer2">
-              <h2>Contatos</h2>
-              <a href="index.html">Contatos</a>
-              <a href="index.html">Suporte</a>
-              <a href="index.html">Nos apoie</a>
-          </div>
+            <div class="footer-heading footer2">
+                <h2>Contatos</h2>
+                <a href="index.html">Contatos</a>
+                <a href="index.html">Suporte</a>
+                <a href="index.html">Nos apoie</a>
+            </div>
 
-          <div class="footer-heading footer4">
-              <h2>Serviços</h2>
-              <a href="#noticiasRecentes">Notícias recentes</a>
-              <a href="verificador.html">Verificação FakeNews</a>
-              <a href="FAQ.html">Saiba evitar as Fake News</a>
-          </div>
+            <div class="footer-heading footer4">
+                <h2>Serviços</h2>
+                <a href="#noticiasRecentes">Notícias recentes</a>
+                <a href="verificador.html">Verificação FakeNews</a>
+                <a href="FAQ.html">Saiba evitar as Fake News</a>
+            </div>
 
-          <div class="footer-heading footer3">
-              <h2>Mídias Sociais</h2>
-              <div class="sm">
-                <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
-                <a href="https://twitter.com/" class="fab fa-twitter"></a>
-                <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
-              </div>
-          </div>
-      </div>
+            <div class="footer-heading footer3">
+                <h2>Mídias Sociais</h2>
+                <div class="sm">
+                    <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+                    <a href="https://twitter.com/" class="fab fa-twitter"></a>
+                    <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- scripts -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script src="./js/header.js"></script>
     <script src="./js/form.js"></script>
     <script src="./js/verificador.js"></script>
-  </body>
+    <script src="./js/like.js"></script>
+</body>
+
 </html>
