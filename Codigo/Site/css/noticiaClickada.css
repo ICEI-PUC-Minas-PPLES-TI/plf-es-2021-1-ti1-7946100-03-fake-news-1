@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #212329;
+}
+
+.container-notcia_clickada {
+  margin: 10px 0px;
+  overflow: auto;
+  color: rgb(255, 253, 253);
+  clear: both;
+}
+
+.container-notcia_clickada h1 {
+  text-align: center;
+  color: red;
+}
+
+.container-notcia_clickada #titulo {
+  color: #c42929;
+}
+
+.container-notcia_clickada #conteudo {
+  color: black;
+}
+
+.container-notcia_clickada #image {
+  width: 100%;
+}

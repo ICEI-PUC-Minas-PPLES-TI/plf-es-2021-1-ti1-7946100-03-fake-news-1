@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br" dir="ltr">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/nsearch.css" />
+    <meta charset="utf-8" />
+    <title>AvisoFN</title>
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/index.css" />
-    <script src="./js/db.js"></script>
-    <script defer src="./js/nsearch.js"></script>
+    <link rel="stylesheet" href="./css/noticiaPesquisada.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -19,10 +17,14 @@
       integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
       crossorigin="anonymous"
     />
-    <title>Notícias Pesquisadas</title>
   </head>
-
   <body>
+    <div class="container">
+      <div class="preloader complete">
+        <div class="loader"></div>
+      </div>
+    </div>
+
     <!-- Navbar -->
     <nav>
       <div class="menu-icon">
@@ -44,7 +46,7 @@
       <div class="cancel-icon">
         <span class="fas fa-times"></span>
       </div>
-      <form action="./noticiapesq.html">
+      <form action="./noticiaPesquisada.html">
         <input
           type="text"
           name="query"
@@ -56,12 +58,16 @@
       </form>
     </nav>
 
-    <!-- conteúdo -->
-    <section class="py-5 text-center container-fluid verificador">
-      <section id="news-container"></section>
+    <!-- Conteúdo -->
+    <body>
+    <section class="ntcsearch">
+      <h1>Notícias</h1>
+      <input type="text" id="txtPesquisa" />
+      <button id="btnPesquisa">Pesquisar</button>
+    
+      <div id="container"></div>
     </section>
-
-    <!--footer-->
+    <!-- Footer -->
     <div class="footer-container">
       <div class="footer">
         <div class="footer-heading footer1">
@@ -97,12 +103,39 @@
         </div>
       </div>
     </div>
+
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.14.0/jquery.validate.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+      crossorigin="anonymous"
+    ></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="./js/header.js"></script>
+    <script src="./js/noticiaPesquisada.js"></script>
   </body>
 </html>
 
-<script
-  src="https://code.jquery.com/jquery-3.6.0.js"
-  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-  crossorigin="anonymous"
-></script>
-<script src="./js/header.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
