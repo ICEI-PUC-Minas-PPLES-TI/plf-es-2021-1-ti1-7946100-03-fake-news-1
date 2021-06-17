@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/login.css" />
+  </head>
+  <body>
+    <body>
+      <section>
+        <div class="container">
+          <div class="user signinBx">
+            <div class="imgBx">
+              <img
+                src="https://media.discordapp.net/attachments/829482389180383235/854855924291600394/16151019399039.png"
+                alt=""
+              />
+            </div>
+            <div class="formBx">
+              <form action="" onsubmit="return false;">
+                <h2>Realize seu Login</h2>
+                <input type="text" id="loginUsuario" placeholder="Usuário" />
+                <input type="password" id="loginSenha" placeholder="Senha" />
+                <input type="submit" id="login" value="Login" />
+                <p class="signup">
+                  Não possui uma conta?
+                  <a href="#" onclick="toggleForm();">Registre-se</a>
+                </p>
+                <p class="signup">
+                  <a href="./index.html">Voltar para o site</a>
+                </p>
+              </form>
+            </div>
+          </div>
+          <div class="user signupBx">
+            <div class="formBx">
+              <form action="" onsubmit="return false;">
+                <h2>Criar uma conta</h2>
+                <input type="text" id="cadastroUsuario" placeholder="Usuário" />
+                <input
+                  type="email"
+                  id="cadastroEmail"
+                  placeholder="Endereço de Email"
+                />
+                <input type="password" id="cadastroSenha" placeholder="Senha" />
+                <input
+                  type="password"
+                  id="cadastroSenhaConfirmacao"
+                  placeholder="Confirmar Senha"
+                />
+                <input type="submit" id="cadastrar" value="Cadastrar" />
+                <p class="signup">
+                  Já possuí uma conta?
+                  <a href="#" onclick="toggleForm();">Faça Login</a>
+                </p>
+                <p class="signup">
+                  <a href="./index.html">Voltar para o site</a>
+                </p>
+              </form>
+            </div>
+            <div class="imgBx">
+              <img
+                src="https://conteudo.imguol.com.br/c/noticias/2a/2020/10/16/fake-news-noticias-falsas-combate-a-fake-news-1602862357549_v2_1920x1302.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </body>
+    <!-- partial -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/login.js"></script>
+  </body>
+</html>

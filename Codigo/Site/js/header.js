@@ -22,3 +22,29 @@ searchBtn.onclick = () => {
   searchBtn.classList.add("hide");
   cancelBtn.classList.add("show");
 };
+
+//Login - logout
+function logout() {
+  localStorage.setItem("logado", false);
+  localStorage.removeItem("logadoAlert");
+}
+
+$("#logout").hide(); //trocar de lugar talvez
+
+const logado = localStorage.getItem("logado");
+
+if (logado == "true") {
+  if (!localStorage.getItem("logadoAlert")) {
+    Swal.fire({
+      position: "top-end",
+      icon: "success",
+      title: "Usuário logado com sucesso!",
+      showConfirmButton: false,
+      timer: 1500,
+    });
+    localStorage.setItem("logadoAlert", true);
+  }
+
+  $("#login").hide();
+  $("#logout").show();
+}
