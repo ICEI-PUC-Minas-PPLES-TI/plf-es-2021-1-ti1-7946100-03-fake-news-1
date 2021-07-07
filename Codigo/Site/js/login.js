@@ -34,40 +34,42 @@ $("#cadastrar").click(() => {
       });
     }
   } else {
-    let dbUsuarios = JSON.parse(localStorage.getItem("usuarios")) ?? [];
+    axios
+      .get(`https://api-tiaw.bernardoaquino1.repl.co/usuarios`)
+      .then((response) => {
+        var dbUsuarios = response.data;
 
-    const usuarioEmailExiste = dbUsuarios.filter(
-      (u) => u.usuario == usuario || u.email == email
-    );
+        const usuarioEmailExiste = dbUsuarios.filter(
+          (u) => u.usuario == usuario || u.email == email
+        );
 
-    if (usuarioEmailExiste.length !== 0) {
-      Swal.fire({
-        icon: "error",
-        title: "Aviso",
-        text: "O usuário ou email informado já existe!",
-        confirmButtonText: "Entendi",
+        if (usuarioEmailExiste.length !== 0) {
+          Swal.fire({
+            icon: "error",
+            title: "Aviso",
+            text: "O usuário ou email informado já existe!",
+            confirmButtonText: "Entendi",
+          });
+        } else {
+          axios
+            .post("https://api-tiaw.bernardoaquino1.repl.co/usuarios", {
+              usuario: usuario,
+              email: email,
+              senha: senha,
+              tipo_usuario: 2,
+            })
+            .then(() => {
+              Swal.fire({
+                icon: "success",
+                title: "Sucesso!",
+                text: "Usuário cadastrado com sucesso!",
+              }).then(() => {
+                localStorage.setItem("logado", true);
+                window.location.href = "../index.html";
+              });
+            });
+        }
       });
-    } else {
-      let objetoUsuario = {
-        id_usuario: dbUsuarios.length + 1,
-        usuario: usuario,
-        email: email,
-        senha: senha,
-        tipo_usuario: 2, // 1 - ADM / 2 - Usuário comum
-      };
-
-      dbUsuarios.push(objetoUsuario);
-      localStorage.setItem("usuarios", JSON.stringify(dbUsuarios));
-
-      Swal.fire({
-        icon: "success",
-        title: "Sucesso!",
-        text: "Usuário cadastrado com sucesso!",
-      }).then(() => {
-        localStorage.setItem("logado", true);
-        window.location.href = "../index.html";
-      });
-    }
   }
 });
 
@@ -83,32 +85,37 @@ $("#login").click(() => {
       confirmButtonText: "Entendi",
     });
   } else {
-    let dbUsuarios = JSON.parse(localStorage.getItem("usuarios"));
+    axios
+      .get(`https://api-tiaw.bernardoaquino1.repl.co/usuarios`)
+      .then((response) => {
+        var dbUsuarios = response.data;
+        if (dbUsuarios) {
+          const login = dbUsuarios.filter(
+            (u) => u.usuario == usuario && u.senha == senha
+          );
 
-    if (dbUsuarios) {
-      const login = dbUsuarios.filter(
-        (u) => u.usuario == usuario && u.senha == senha
-      );
-
-      //modal de sucesso ou erro e manda para outra página ou não
-      if (login.length === 0) {
-        Swal.fire({
-          icon: "error",
-          title: "Aviso",
-          text: "O usuário e senha não constam em nosso sistema!",
-          confirmButtonText: "Entendi",
-        });
-      } else {
-        localStorage.setItem("logado", true);
-        window.location.href = "../index.html";
-      }
-    } else {
-      Swal.fire({
-        icon: "error",
-        title: "Aviso",
-        text: "O usuário e senha não constam em nosso sistema!",
-        confirmButtonText: "Entendi",
+          //modal de sucesso ou erro e manda para outra página ou não
+          if (login.length === 0) {
+            Swal.fire({
+              icon: "error",
+              title: "Aviso",
+              text: "O usuário e senha não constam em nosso sistema!",
+              confirmButtonText: "Entendi",
+            });
+          } else {
+            localStorage.setItem("logado", true);
+            localStorage.setItem("nomeUsuario", usuario);
+            localStorage.setItem("tipoUsuario", login[0].tipo_usuario);
+            window.location.href = "../index.html";
+          }
+        } else {
+          Swal.fire({
+            icon: "error",
+            title: "Aviso",
+            text: "O usuário e senha não constam em nosso sistema!",
+            confirmButtonText: "Entendi",
+          });
+        }
       });
-    }
   }
 });

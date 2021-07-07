@@ -26,6 +26,7 @@ searchBtn.onclick = () => {
 //Login - logout
 function logout() {
   localStorage.setItem("logado", false);
+  localStorage.setItem("tipoUsuario", 2);
   localStorage.removeItem("logadoAlert");
 }
 
@@ -47,4 +48,13 @@ if (logado == "true") {
 
   $("#login").hide();
   $("#logout").show();
+}
+
+//Tipo Usuario
+$("#tipoUsuario").hide(); //trocar de lugar talvez
+
+const tipoUsuario = localStorage.getItem("tipoUsuario");
+
+if (tipoUsuario == 1) {
+  $("#tipoUsuario").show();
 }

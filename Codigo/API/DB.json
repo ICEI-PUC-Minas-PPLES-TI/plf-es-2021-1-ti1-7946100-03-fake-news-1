@@ -1,0 +1,125 @@
+{
+  "usuarios": [],
+  "sitesVerificador": [
+    {
+      "id": 1,
+      "link": "noticias.uol.com.br"
+    },
+    {
+      "id": 2,
+      "link": "www1.folha.uol.com.br"
+    },
+    {
+      "id": 3,
+      "link": "www.estadao.com.br"
+    },
+    {
+      "id": 4,
+      "link": "istoe.com.br"
+    },
+    {
+      "id": 5,
+      "link": "oglobo.globo.com"
+    },
+    {
+      "id": 6,
+      "link": "queer.ig.com.br"
+    },
+    {
+      "id": 7,
+      "link": "veja.abril.com.br"
+    },
+    {
+      "id": 8,
+      "link": "gshow.globo.com"
+    },
+    {
+      "id": 9,
+      "link": "br.noticias.yahoo.com"
+    },
+    {
+      "id": 10,
+      "link": "www.uol.com.br"
+    },
+    {
+      "id": 11,
+      "link": "news.google.com"
+    },
+    {
+      "id": 12,
+      "link": "noticias.r7.com"
+    },
+    {
+      "id": 13,
+      "link": "www.terra.com.br"
+    },
+    {
+      "id": 14,
+      "link": "g1.globo.com"
+    },
+    {
+      "id": 15,
+      "link": "exame.com"
+    },
+    {
+      "id": 16,
+      "link": "www.gazetadopovo.com.br"
+    },
+    {
+      "id": 17,
+      "link": "www.portaldoholanda.com.br"
+    },
+    {
+      "id": 18,
+      "link": "www.lance.com.br"
+    },
+    {
+      "id": 19,
+      "link": "globoesporte.globo.com"
+    },
+    {
+      "id": 20,
+      "link": "www.band.uol.com.br"
+    },
+    {
+      "id": 21,
+      "link": "oglobo.globo.com"
+    },
+    {
+      "id": 22,
+      "link": "www.correio24horas.com.br"
+    },
+    {
+      "id": 23,
+      "link": "www.uai.com.br"
+    },
+    {
+      "id": 24,
+      "link": "imasters.com.br"
+    },
+    {
+      "id": 25,
+      "link": "www.tecmundo.com.br"
+    },
+    {
+      "id": 26,
+      "link": "olhardigital.com.br"
+    },
+    {
+      "id": 27,
+      "link": "www.techtudo.com.br"
+    },
+    {
+      "id": 28,
+      "link": "www.bbc.com"
+    },
+    {
+      "id": 29,
+      "link": "www.cnnbrasil.com.br"
+    },
+    {
+      "id": 30,
+      "link": "www.msn.com"
+    }
+  ]
+}
