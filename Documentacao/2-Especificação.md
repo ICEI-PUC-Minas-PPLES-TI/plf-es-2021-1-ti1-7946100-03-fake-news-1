@@ -30,6 +30,19 @@ que aceitem alunos estrangeiros.
 > Lembre-se que você deve ser enumerar e descrever precisamente e
 > personalizada todos os clientes ideais que sua solução almeja.
 
+
+
+![persona1](images/persona1.jpeg)
+
+![persona2](images/persona2.jpeg)
+
+![persona3](images/persona3.jpeg)
+
+![persona4](images/persona4.jpeg)
+
+
+
+
 ## Histórias de Usuários
 
 Com base na análise das personas foram identificadas as seguintes histórias de usuários:
@@ -50,6 +63,13 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 > - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
 > - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
 
+
+
+![histUsuario](images/histUsuario.jpeg)
+
+![histUsua1](images/histUsua1.jpeg)
+
+
 ## Requisitos
 
 As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
@@ -60,6 +80,15 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |------|-----------------------------------------|----|
 |RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
 |RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+
+
+![requisitos1](images/requisitos1.jpeg)
+
+![requisitos2](images/requisitos2.jpeg)
+
+![requisitos3](images/requisitos3.jpeg)
+
+![requisitos4](images/requisitos4.jpeg)
 
 
 ### Requisitos não Funcionais
@@ -87,6 +116,10 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 > característica alvo da sua solução. Além disso, certifique-se de que
 > todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
+
+
+![requinaofunc](images/requinaofunc.jpeg)
+
 ## Restrições
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
@@ -99,6 +132,10 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 > Enumere as restrições à sua solução. Lembre-se de que as restrições
 > geralmente limitam a solução candidata.
+
+
+![restricoes](images/restricoes.jpeg)
+
 > 
 > **Links Úteis**:
 > - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
