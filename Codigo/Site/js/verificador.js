@@ -1,5 +1,5 @@
 $("#btnVerificar").click(() => {
-  axios.get(`http://localhost:3000/sitesVerificador`).then((response) => {
+  axios.get(`https://api-tiaw.bernardoaquino1.repl.co/sitesVerificador`).then((response) => {
     const BD = response.data;
     console.log(BD);
     $(".container .preloader").delay(4000).removeClass("complete");
