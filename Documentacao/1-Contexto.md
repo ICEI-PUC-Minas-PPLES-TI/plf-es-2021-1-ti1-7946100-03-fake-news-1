@@ -38,6 +38,6 @@ Em relação ao Brasil, apesar de uma maior preocupação quanto à veracidade d
 
 Embora todas as pessoas possam se beneficiar de soluções isentas para se informarem por meio de informações idôneas, o foco deste trabalho está no público que tem o hábito de ler notícias sobre diversos assuntos no seu dia a dia, com o intuito de se informarem sobre  o que está acontecendo no mundo e na sociedade, porém, identificamos que os idosos em geral costumam ter mais dificuldade com a tecnologia.
 
-Desta forma, estabeleceu-se como público-alvo desta solução os homens e as mulheres acima de 60 anos (idosos), que fazem uso frequente de computadores e dispositivos móveis para se atualizarem com diversos tipos de informações e notícias, e que muitas vezes não buscam confirmar a veracidade das informações, ou não possuem meios otimizados e de interface amigável para poder realizar a verificação.
+Desta forma, estabeleceu-se como público-alvo desta solução os homens e as mulheres entre 27 e 60, que fazem uso frequente de computadores e dispositivos móveis para se atualizarem com diversos tipos de informações e notícias, e que muitas vezes não buscam confirmar a veracidade das informações, ou não possuem meios otimizados e de interface amigável para poder realizar a verificação.
 
  
