@@ -8,7 +8,7 @@
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em
+Pedro Paulo tem 28 anos, é arquiteto recém-formado e autônomo. Pensa em
 se desenvolver profissionalmente através de um mestrado fora do país,
 pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está
 buscando uma agência que o ajude a encontrar universidades na Europa
@@ -32,7 +32,7 @@ que aceitem alunos estrangeiros.
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+Com base na análise das personas foram identificadas as seguintes histórias de usuários:
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
