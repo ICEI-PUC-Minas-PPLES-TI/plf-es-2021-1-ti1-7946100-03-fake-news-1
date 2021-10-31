@@ -1,0 +1,33 @@
+cff-version: 1.0.1
+message: Please cite this software using these metadata.
+title: Portal Fake News
+authors:
+  - family-names: Oliveira da Silveira Barbosa
+    given-names: Kaio Henrique
+  - family-names: Siqueira Massaro
+    given-names: Igor
+  - family-names: Nogueira Soares
+    given-names: Luiz Guilherme
+  - family-names: Aquino Capello Coelho
+    given-names: Bernardo
+  - family-names: Gonçalves
+    given-names: Pedro Luis
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: de Nardim
+    given-names: Luciana
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Alves Nogueira
+    given-names: Simone
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Vieira Carneiro
+    given-names: Rommel
+keywords:
+  - Notícias
+  - Veracidade
+repository-code: https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2021-1-ti1-7946100-03-fake-news-1
+license: CC-BY-4.0
+version: 1.0.0
+date-released: 2021-06-20
